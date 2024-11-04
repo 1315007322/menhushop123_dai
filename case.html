@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav class="fixed top-0 z-20 w-full" id="navbar">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#"
+                  class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Cases</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Contact us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="top p-20 flex items-center">
+      <p class="text-white">— Case</p>
+    </div>
+
+    <div class="cases p-20">
+      <div
+        class="my-10 box-border flex relative p-[30px] hover:text-[#07a6d3] hover:rounded hover:shadow-[rgba(0,0,0,0.12)_0_0_22px] [transition:color .4s ease-out,background-color .4s ease-out]"
+      >
+        <a
+          class="no-underline box-border flex w-1/2"
+          href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+        >
+          <div
+            class="box-border w-full px-10 items-start shrink-0 max-w-full overflow-hidden relative mr-[30px] roPMCD"
+          >
+            <div class="w-full">
+              <img
+                data-loaded="true"
+                class="w-full"
+                src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAg4KK2qwYolZqwwgEwtgU4mQM.jpg.webp"
+              />
+            </div>
+          </div>
+        </a>
+        <div class="box-border grow w-auto">
+          <a
+            class="no-underline box-border"
+            href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+          >
+            <div class="items-start flex flex-nowrap justify-between mt-0">
+              <h4
+                class="text-base text-[#333] font-normal leading-normal m-0 p-0 hover:text-[#07a6d3]"
+              >
+                How to choose hardware hinges for doors and windows? Notes on
+                hinge selection
+              </h4>
+              <span class="text-[#999] text-sm leading-6 shrink-0 ml-[30px]">
+                2023-12-04
+              </span>
+            </div>
+            <div
+              class="text-[#666] text-sm leading-[1.7] break-words overflow-hidden text-ellipsis mt-[18px] [-webkit-box-orient:vertical] [display:-webkit-box] [word-break:break-word]"
+            >
+              1. The materials used should be corrosion-resistant and of solid
+              qualityWhen purchasing hinges, it is necessary to choose according
+              to the environment and material characteristics. When
+              purchasing,...
+            </div>
+          </a>
+          <div
+            class="mt-5 after:clear-both after:content-[''] after:table after:h-0 after:leading-[0]"
+          >
+            <a
+              class="no-underline box-border flex"
+              href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+            ></a>
+            <div class="leading-none -mt-3">
+              <a
+                class="no-underline box-border flex"
+                href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+              ></a>
+              <a
+                class="no-underline border border-neutral-200 text-[#999] inline-block text-xs h-[26px] leading-[26px] max-w-full overflow-hidden relative break-keep z-[2] mr-[15px] mt-3 px-2 py-0 rounded-[5px] border-solid"
+                href="https://fkwwm08.demo.webportal.top/en/nr.jsp?_reqArgs=%7B%22args%22%3A%7B%22groupId%22%3A3%2C%22jpt%22%3A4%7D%2C%22type%22%3A32%7D"
+              >
+                INFORMATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-10 box-border flex relative p-[30px] hover:text-[#07a6d3] hover:rounded hover:shadow-[rgba(0,0,0,0.12)_0_0_22px] [transition:color .4s ease-out,background-color .4s ease-out]"
+      >
+        <a
+          class="no-underline box-border flex w-1/2"
+          href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+        >
+          <div
+            class="box-border w-full px-10 items-start shrink-0 max-w-full overflow-hidden relative mr-[30px] roPMCD"
+          >
+            <div class="w-full">
+              <img
+                data-loaded="true"
+                class="w-full"
+                src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAg4KK2qwYolZqwwgEwtgU4mQM.jpg.webp"
+              />
+            </div>
+          </div>
+        </a>
+        <div class="box-border grow w-auto">
+          <a
+            class="no-underline box-border"
+            href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+          >
+            <div class="items-start flex flex-nowrap justify-between mt-0">
+              <h4
+                class="text-base text-[#333] font-normal leading-normal m-0 p-0 hover:text-[#07a6d3]"
+              >
+                How to choose hardware hinges for doors and windows? Notes on
+                hinge selection
+              </h4>
+              <span class="text-[#999] text-sm leading-6 shrink-0 ml-[30px]">
+                2023-12-04
+              </span>
+            </div>
+            <div
+              class="text-[#666] text-sm leading-[1.7] break-words overflow-hidden text-ellipsis mt-[18px] [-webkit-box-orient:vertical] [display:-webkit-box] [word-break:break-word]"
+            >
+              1. The materials used should be corrosion-resistant and of solid
+              qualityWhen purchasing hinges, it is necessary to choose according
+              to the environment and material characteristics. When
+              purchasing,...
+            </div>
+          </a>
+          <div
+            class="mt-5 after:clear-both after:content-[''] after:table after:h-0 after:leading-[0]"
+          >
+            <a
+              class="no-underline box-border flex"
+              href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+            ></a>
+            <div class="leading-none -mt-3">
+              <a
+                class="no-underline box-border flex"
+                href="https://fkwwm08.demo.webportal.top/en/nd.jsp?id=10"
+              ></a>
+              <a
+                class="no-underline border border-neutral-200 text-[#999] inline-block text-xs h-[26px] leading-[26px] max-w-full overflow-hidden relative break-keep z-[2] mr-[15px] mt-3 px-2 py-0 rounded-[5px] border-solid"
+                href="https://fkwwm08.demo.webportal.top/en/nr.jsp?_reqArgs=%7B%22args%22%3A%7B%22groupId%22%3A3%2C%22jpt%22%3A4%7D%2C%22type%22%3A32%7D"
+              >
+                INFORMATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer p-20 bg-black">
+      <div class="grid grid-cols-10 gap-20">
+        <div class="col-span-3">
+          <p class="title text-white mb-5">CONTACT US</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/003.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Address：XXX Road, XXX County, XXX City, XXX Province
+            </li>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/002.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Telephone：020-0000-0000
+            </li>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/004.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Contact email:：xxx@.co.m
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-3">
+          <p class="title text-white mb-5">ABOUT US</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              Provide accurate purchasing information for foreign trade hardware
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-2">
+          <p class="title text-white mb-5">PRODUCTS</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              Electric Drill Bearing Screwdriver
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <img
+            src="./images/AD0IlIOcDxAEGAAg3-y1qwYo06_G_AQwsgI4sAE.png.webp"
+            class="w-full"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        navbar.classList.add("bg-black", "bg-opacity-60");
+      } else {
+        navbar.classList.remove("bg-black", "bg-opacity-60");
+      }
+    });
+  </script>
+</html>

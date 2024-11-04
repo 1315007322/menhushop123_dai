@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav class="fixed top-0 z-20 w-full" id="navbar">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#"
+                  class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Cases</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Contact us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <swiper-container class="banner_mySwiper text-white" pagination="ture">
+        <swiper-slide class="p-20">
+          <p class="pt-32">Best Hand Tools Collection</p>
+          <p class="font-bold my-10">Best Hand Tools Collection</p>
+          <p class="text-gray-400">Best Hand Tools Collection</p>
+          <a
+            href=""
+            class="inline-block p-2 px-10 border-sky-500 border mt-28 text-sky-500"
+          >
+            Contact Us
+          </a>
+        </swiper-slide>
+        <swiper-slide class="p-20">
+          <p class="pt-32">Best Hand Tools Collection</p>
+          <p class="font-bold my-10">Best Hand Tools Collection</p>
+          <p class="text-gray-400">Best Hand Tools Collection</p>
+          <a
+            href=""
+            class="inline-block p-2 px-10 border-sky-500 border mt-28 text-sky-500"
+          >
+            Contact Us
+          </a>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <div class="section2">
+      <div
+        class="box-border max-w-full relative bg-none bg-[#f2f5f9] bg-cover bg-no-repeat bg-[center_center] m-0 px-[2.3511%] py-[5.20833vw] JSiOsa"
+        id="row118"
+      >
+        <div class="flex flex-nowrap relative">
+          <div
+            class="box-border text-[0px] min-h-[30px] relative w-3/12 max-w-full bg-[url(https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAguo21qwYosY6hmwIwAjhG.png)] bg-[rgba(255,255,255,0)] bg-no-repeat bg-[right_center] m-0 p-0 [transition:border .3s,background .3s,box-shadow .3s,padding .3s,border-radius .3s] DeXKbr"
+          >
+            <div class="inline-block min-h-full relative w-full">
+              <div
+                data-animations-id="314"
+                class="box-border min-h-[30px] min-w-[30px] relative mx-[7.93319%] my-0 uFTvBO"
+                id="module314"
+              >
+                <div class="min-h-[30px]">
+                  <div class="text-sm relative min-h-[30px]">
+                    <div
+                      class="module_content_detail icon_combination icon_combination_new_module_after_20210707"
+                      id="314"
+                    >
+                      <div class="p-[1%]">
+                        <div class="flex flex-wrap w-full">
+                          <a
+                            class="no-underline box-border flex w-3/12 ml-[2%] mt-[2%] rounded-sm EKAHGZ"
+                            rel=""
+                          >
+                            <div
+                              class="items-center box-border flex text-left w-full p-0"
+                            >
+                              <div class="flex-1 text-[0px] text-center">
+                                <div class="overflow-visible">
+                                  <img
+                                    src="https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAgj421qwYoqpXJrwIwUDhQ!1500x1500.png.webp"
+                                    class="align-top max-w-full border-0"
+                                  />
+                                </div>
+                              </div>
+                              <div class="w-9/12 pl-3.5 DIPrce">
+                                <div
+                                  class="bg-clip-text text-[#212121] text-lg leading-normal break-all overflow-hidden max-h-none [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+                                >
+                                  Free worldwide shipping
+                                </div>
+                                <div
+                                  class="bg-clip-text text-[#999] text-sm leading-normal overflow-hidden max-h-none mt-3 [word-break:break-word] [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]"
+                                >
+                                  lt is long established twill be distracted be
+                                  readablehat readable
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-border text-[0px] min-h-[30px] relative w-3/12 max-w-full bg-[url(https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAguo21qwYosY6hmwIwAjhG.png)] bg-[rgba(255,255,255,0)] bg-no-repeat bg-[right_center] m-0 p-0 [transition:border .3s,background .3s,box-shadow .3s,padding .3s,border-radius .3s] qAwAvo"
+          >
+            <div class="inline-block min-h-full relative w-full">
+              <div
+                data-animations-id="315"
+                class="box-border min-h-[30px] min-w-[30px] relative mx-[7.93319%] my-0 VDNIJx"
+                id="module315"
+              >
+                <div class="min-h-[30px]">
+                  <div class="text-sm relative min-h-[30px]">
+                    <div
+                      class="module_content_detail icon_combination icon_combination_new_module_after_20210707"
+                      id="315"
+                    >
+                      <div class="p-[1%]">
+                        <div class="flex flex-wrap w-full">
+                          <a
+                            class="no-underline box-border flex w-3/12 ml-[2%] mt-[2%] rounded-sm eUAyXu"
+                            rel=""
+                          >
+                            <div
+                              class="items-center box-border flex text-left w-full p-0"
+                            >
+                              <div class="flex-1 text-[0px] text-center">
+                                <div class="overflow-visible">
+                                  <img
+                                    src="https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAg3461qwYo08ucrAMwTDhG!1500x1500.png.webp"
+                                    class="align-top max-w-full border-0"
+                                  />
+                                </div>
+                              </div>
+                              <div class="w-9/12 pl-3.5 slmPvg">
+                                <div
+                                  class="bg-clip-text text-[#212121] text-lg leading-normal break-all overflow-hidden max-h-none [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+                                >
+                                  Secure Payments
+                                </div>
+                                <div
+                                  class="bg-clip-text text-[#999] text-sm leading-normal overflow-hidden max-h-none mt-3 [word-break:break-word] [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]"
+                                >
+                                  Use your favorite method of checkout and
+                                  payment
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-border text-[0px] min-h-[30px] relative w-3/12 max-w-full bg-[url(https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAguo21qwYosY6hmwIwAjhG.png)] bg-[rgba(255,255,255,0)] bg-no-repeat bg-[right_center] m-0 p-0 [transition:border .3s,background .3s,box-shadow .3s,padding .3s,border-radius .3s] PuJPNw"
+          >
+            <div class="inline-block min-h-full relative w-full">
+              <div
+                data-animations-id="316"
+                class="box-border min-h-[30px] min-w-[30px] relative mx-[7.93319%] my-0 qttYcf"
+                id="module316"
+              >
+                <div class="min-h-[30px]">
+                  <div class="text-sm relative min-h-[30px]">
+                    <div
+                      class="module_content_detail icon_combination icon_combination_new_module_after_20210707"
+                      id="316"
+                    >
+                      <div class="p-[1%]">
+                        <div class="flex flex-wrap w-full">
+                          <a
+                            class="no-underline box-border flex w-3/12 ml-[2%] mt-[2%] rounded-sm QpwrSe"
+                            rel=""
+                          >
+                            <div
+                              class="items-center box-border flex text-left w-full p-0"
+                            >
+                              <div class="flex-1 text-[0px] text-center">
+                                <div class="overflow-visible">
+                                  <img
+                                    src="https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAg1Y61qwYowPeChgYwTDhI!1500x1500.png.webp"
+                                    class="align-top max-w-full border-0"
+                                  />
+                                </div>
+                              </div>
+                              <div class="w-9/12 pl-3.5 scuLlq">
+                                <div
+                                  class="bg-clip-text text-[#212121] text-lg leading-normal break-all overflow-hidden max-h-none [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+                                >
+                                  24x7 Support Available
+                                </div>
+                                <div
+                                  class="bg-clip-text text-[#999] text-sm leading-normal overflow-hidden max-h-none mt-3 [word-break:break-word] [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]"
+                                >
+                                  support 24 hours a day
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-border text-[0px] min-h-[30px] relative w-3/12 max-w-full bg-none bg-[rgba(255,255,255,0)] bg-no-repeat bg-[right_center] m-0 p-0 [transition:border .3s,background .3s,box-shadow .3s,padding .3s,border-radius .3s] YCRRwq"
+          >
+            <div class="inline-block min-h-full relative w-full">
+              <div
+                data-animations-id="317"
+                class="box-border min-h-[30px] min-w-[30px] relative mx-[7.93319%] my-0 folmUs"
+                id="module317"
+              >
+                <div class="min-h-[30px]">
+                  <div class="text-sm relative min-h-[30px]">
+                    <div
+                      class="module_content_detail icon_combination icon_combination_new_module_after_20210707"
+                      id="317"
+                    >
+                      <div class="p-[1%]">
+                        <div class="flex flex-wrap w-full">
+                          <a
+                            class="no-underline box-border flex w-3/12 ml-[2%] mt-[2%] rounded-sm akFXmX"
+                            rel=""
+                          >
+                            <div
+                              class="items-center box-border flex text-left w-full p-0"
+                            >
+                              <div class="flex-1 text-[0px] text-center">
+                                <div class="overflow-visible">
+                                  <img
+                                    src="https://31916436.s61i.faiusr.com/4/AD0IlIOcDxAEGAAg5Y61qwYo4NeGkAYwSjhK!1500x1500.png.webp"
+                                    class="align-top max-w-full border-0"
+                                  />
+                                </div>
+                              </div>
+                              <div class="w-9/12 pl-3.5 gKFxaS">
+                                <div
+                                  class="bg-clip-text text-[#212121] text-lg leading-normal break-all overflow-hidden max-h-none [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+                                >
+                                  Quick response
+                                </div>
+                                <div
+                                  class="bg-clip-text text-[#999] text-sm leading-normal overflow-hidden max-h-none mt-3 [word-break:break-word] [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]"
+                                >
+                                  We can help you find the product you want
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3 p-20">
+      <div class="grid grid-cols-3 gap-10 jz_web_row">
+        <div class="col-span-1 jz_web_row__content h-full">
+          <div class="tips">Sale</div>
+          <p>
+            <span class="bg-clip-text text-black RRpyku">Discover Tools</span>
+          </p>
+          <p>
+            <span> Daily Pliers</span>
+          </p>
+          <a href="" class="bg-white">Book Now</a>
+        </div>
+        <div class="col-span-1 jz_web_row__content h-full">
+          <div class="tips">Sale</div>
+          <div class="title_link">
+            <p>
+              <span class="bg-clip-text text-black RRpyku">Discover Tools</span>
+            </p>
+            <p>
+              <span> Daily Pliers</span>
+            </p>
+            <a href="" class="bg-white">Book Now</a>
+          </div>
+        </div>
+        <div class="col-span-1 jz_web_row__content h-full">
+          <div class="tips">Sale</div>
+          <p>
+            <span class="bg-clip-text text-black RRpyku">Discover Tools</span>
+          </p>
+          <p>
+            <span> Daily Pliers</span>
+          </p>
+          <a href="" class="bg-white">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="products_home p-20">
+      <div class="title_left">
+        <p>Favourite Onlite Tools</p>
+        <p>Focusing on the hardware industry，Low price, high quality</p>
+      </div>
+
+      <div class="products_nav border-b">
+        <ul class="flex flex-wrap justify-end m-0 p-0">
+          <li
+            class="text-[#202020] items-center box-border cursor-pointer flex text-sm justify-center max-w-[360px] min-w-[54px] text-center relative transition-[background] duration-[0.5s] mx-[5px] my-0 px-5 py-4 [-webkit-tap-highlight-color:transparent] [list-style:none]"
+          >
+            <span class="relative w-full">
+              <span
+                class="block float-left overflow-hidden text-ellipsis whitespace-nowrap w-full text-lg no-underline text-[#0691b8]"
+              >
+                Hammer Tool
+              </span>
+            </span>
+            <i
+              class="bg-[#07a6d3] block h-0.5 absolute w-full left-0 bottom-0"
+            ></i>
+            <i class="border-[#07a6d3]"></i>
+          </li>
+          <div class="items-center flex px-0 py-2.5">
+            <i class="block h-4 w-px [background:#dcdcdc]"></i>
+          </div>
+          <li
+            class="items-center box-border cursor-pointer flex text-sm justify-center max-w-[360px] min-w-[54px] text-center text-[#202020] relative transition-[background] duration-[0.5s] mx-[5px] my-0 px-5 py-4 [-webkit-tap-highlight-color:transparent] [list-style:none]"
+          >
+            <span class="relative w-full">
+              <span
+                class="block float-left overflow-hidden text-ellipsis whitespace-nowrap w-full text-lg no-underline text-[#777]"
+              >
+                Decker Tool
+              </span>
+            </span>
+            <i
+              class="bg-[#07a6d3] hidden h-0.5 absolute w-full left-0 bottom-0"
+            ></i>
+            <i class="border-[#07a6d3]"></i>
+          </li>
+          <div class="items-center flex px-0 py-2.5">
+            <i class="block h-4 w-px [background:#dcdcdc]"></i>
+          </div>
+          <li
+            class="items-center box-border cursor-pointer flex text-sm justify-center max-w-[360px] min-w-[54px] text-center text-[#202020] relative transition-[background] duration-[0.5s] mx-[5px] my-0 px-5 py-4 [-webkit-tap-highlight-color:transparent] [list-style:none]"
+          >
+            <span class="relative w-full">
+              <span
+                class="block float-left overflow-hidden text-ellipsis whitespace-nowrap w-full text-lg no-underline text-[#777]"
+              >
+                Drill Tool
+              </span>
+            </span>
+            <i
+              class="bg-[#07a6d3] hidden h-0.5 absolute w-full left-0 bottom-0"
+            ></i>
+            <i class="border-[#07a6d3]"></i>
+          </li>
+        </ul>
+      </div>
+      <swiper-container
+        class="mySwiper"
+        space-between="30"
+        slides-per-view="auto"
+        autoplay="true"
+        loop="true"
+        data-swiper-autoplay="2000"
+      >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div></swiper-slide
+        >
+      </swiper-container>
+    </div>
+
+    <div class="discount p-20">
+      <div class="grid grid-cols-2 gap-10">
+        <div class="col-span-1 items">
+          <div class="title_link">
+            <p>
+              <span class="bg-clip-text text-white RRpyku">Discover Tools</span>
+            </p>
+            <p>
+              <span class="text-white"> Daily Pliers</span>
+            </p>
+            <a href="" class="text-white bg-sky-500">Book Now</a>
+          </div>
+        </div>
+        <div class="col-span-1 items">
+          <div class="title_link">
+            <p>
+              <span class="bg-clip-text text-white RRpyku">Discover Tools</span>
+            </p>
+            <p>
+              <span class="text-white"> Daily Pliers</span>
+            </p>
+            <a href="" class="text-white bg-sky-500">Book Now</a>
+          </div>
+        </div>
+        <div class="col-span-1 items">
+          <div class="title_link">
+            <p>
+              <span class="bg-clip-text text-white RRpyku">Discover Tools</span>
+            </p>
+            <p>
+              <span class="text-white"> Daily Pliers</span>
+            </p>
+            <a href="" class="text-white bg-sky-500">Book Now</a>
+          </div>
+        </div>
+        <div class="col-span-1 items">
+          <div class="title_link">
+            <p>
+              <span class="bg-clip-text text-white RRpyku">Discover Tools</span>
+            </p>
+            <p>
+              <span class="text-white"> Daily Pliers</span>
+            </p>
+            <a href="" class="text-white bg-sky-500">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured p-20">
+      <div class="title_left pb-10">
+        <p>Featured Product</p>
+        <p>This type of product is eligible for discount discounts</p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-11">
+        <div class="col-span-1 featured_items bg-gray-700 text-white p-20">
+          <p>Featured Product</p>
+          <p>50% OFF</p>
+          <a href="" class="underline"> Book Now </a>
+        </div>
+        <div class="row-span-2 featured-center p-20">
+          <a href="" class="bg-sky-500 text-white inline-block px-8 py-1 mb-16"
+            >Up To 20% Off</a
+          >
+          <p class="text-white">BUY MODULAR NEW TAP</p>
+        </div>
+        <div class="col-span-1">
+          <img
+            src="./images/AD0IlIOcDxACGAAgmui1qwYonM-BqQYwsAQ4wgM.jpg.webp"
+            class="w-full"
+            alt=""
+          />
+        </div>
+        <div class="col-span-1">
+          <img
+            src="./images/AD0IlIOcDxACGAAgmui1qwYonM-BqQYwsAQ4wgM.jpg.webp"
+            class="w-full"
+            alt=""
+          />
+        </div>
+        <div class="col-span-1 featured_items bg-gray-700 text-white p-20">
+          <p>Featured Product</p>
+          <p>50% OFF</p>
+          <a href="" class="underline"> Book Now </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="people p-20">
+      <swiper-container navigation="true">
+        <swiper-slide class="text-center text-white">
+          <div class="title">Testimonial</div>
+          <img
+            src="./images/AD0IlIOcDxAEGAAgn_-AtgYopu7G5AQwzwE4zwE.png.webp"
+            class="w-28 inline-block"
+            alt=""
+          />
+          <div class="title">Testimonial</div>
+          <p class="text p-3">Customer</p>
+          <p class="text p-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod temporincididunt ut labore et dolore magna aliqua. Quis
+            ipsum
+          </p>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <div class="Latest_Blog p-20">
+      <div class="title_left pb-10">
+        <p>Latest Blog</p>
+        <p>View the latest news of our company</p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-11">
+        <div class="col-span-1 p-10 blog_items">
+          <div class="">
+            <img
+              src="./images/AD0IlIOcDxACGAAgyPW1qwYo2pONsgMw_AM4iwI.jpg.webp"
+              alt=""
+              class="w-full bg-cover"
+            />
+          </div>
+          <div class="box-border grow w-full">
+            <div class="items-start block flex-wrap justify-between mt-0">
+              <h4
+                class="text-base text-[#333] font-normal leading-normal overflow-hidden break-all max-h-none mt-5 mb-0 mx-0 p-0 hover:text-[#07a6d3] [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+              >
+                Single Spring Hinge Installation Method Spring Hinge
+                Installation Precautions
+              </h4>
+              <span
+                class="text-[#999] text-sm leading-none inline-block max-w-full mt-[9px]"
+              >
+                2023-12-04
+              </span>
+            </div>
+            <div
+              class="text-[#666] text-sm leading-[1.7] break-words overflow-hidden text-ellipsis break-all max-h-none mt-[18px] [-webkit-box-orient:vertical] [display:-webkit-box] [-webkit-line-clamp:1]"
+            >
+              Although hinges are small and inconspicuous, spring hinges are
+              crucial in daily life. In addition to careful selection, we also
+              need to install them properly when using them. So, what are the
+              insta...
+            </div>
+            <div
+              class="mt-5 after:clear-both after:content-[''] after:table after:h-0 after:leading-[0]"
+            >
+              <div
+                class="leading-none inline-block text-left w-[calc(100%_-_40px)] -mt-3"
+              >
+                <a
+                  class="no-underline border border-neutral-200 text-[#999] inline-block text-xs h-[26px] leading-[26px] max-w-full overflow-hidden relative break-keep z-[2] mr-[15px] mt-3 px-2 py-0 rounded-[5px] border-solid"
+                  href="https://fkwwm08.demo.webportal.top/en/nr.jsp?_reqArgs=%7B%22args%22%3A%7B%22groupId%22%3A2%2C%22jpt%22%3A4%7D%2C%22type%22%3A32%7D"
+                >
+                  NEWS
+                </a>
+              </div>
+              <div
+                class="block float-right h-7 max-w-full overflow-hidden relative w-10 before:content-[''] before:inline-block before:h-7 before:absolute before:transition-[0.36s] before:w-[30px] before:left-0 before:top-0 after:content-[''] after:inline-block after:h-7 after:absolute after:transition-[0.36s] after:w-[30px] after:left-[-30px] after:opacity-0 after:top-0"
+              >
+                <div
+                  class="hidden hover:animate-[0.36s_newsListArrow] arr"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 p-10 blog_items">
+          <div class="">
+            <img
+              src="./images/AD0IlIOcDxACGAAgyPW1qwYo2pONsgMw_AM4iwI.jpg.webp"
+              alt=""
+              class="w-full bg-cover"
+            />
+          </div>
+          <div class="box-border grow w-full">
+            <div class="items-start block flex-wrap justify-between mt-0">
+              <h4
+                class="text-base text-[#333] font-normal leading-normal overflow-hidden break-all max-h-none mt-5 mb-0 mx-0 p-0 hover:text-[#07a6d3] [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+              >
+                Single Spring Hinge Installation Method Spring Hinge
+                Installation Precautions
+              </h4>
+              <span
+                class="text-[#999] text-sm leading-none inline-block max-w-full mt-[9px]"
+              >
+                2023-12-04
+              </span>
+            </div>
+            <div
+              class="text-[#666] text-sm leading-[1.7] break-words overflow-hidden text-ellipsis break-all max-h-none mt-[18px] [-webkit-box-orient:vertical] [display:-webkit-box] [-webkit-line-clamp:1]"
+            >
+              Although hinges are small and inconspicuous, spring hinges are
+              crucial in daily life. In addition to careful selection, we also
+              need to install them properly when using them. So, what are the
+              insta...
+            </div>
+            <div
+              class="mt-5 after:clear-both after:content-[''] after:table after:h-0 after:leading-[0]"
+            >
+              <div
+                class="leading-none inline-block text-left w-[calc(100%_-_40px)] -mt-3"
+              >
+                <a
+                  class="no-underline border border-neutral-200 text-[#999] inline-block text-xs h-[26px] leading-[26px] max-w-full overflow-hidden relative break-keep z-[2] mr-[15px] mt-3 px-2 py-0 rounded-[5px] border-solid"
+                  href="https://fkwwm08.demo.webportal.top/en/nr.jsp?_reqArgs=%7B%22args%22%3A%7B%22groupId%22%3A2%2C%22jpt%22%3A4%7D%2C%22type%22%3A32%7D"
+                >
+                  NEWS
+                </a>
+              </div>
+              <div
+                class="block float-right h-7 max-w-full overflow-hidden relative w-10 before:content-[''] before:inline-block before:h-7 before:absolute before:transition-[0.36s] before:w-[30px] before:left-0 before:top-0 after:content-[''] after:inline-block after:h-7 after:absolute after:transition-[0.36s] after:w-[30px] after:left-[-30px] after:opacity-0 after:top-0"
+              >
+                <div
+                  class="hidden hover:animate-[0.36s_newsListArrow] arr"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 p-10 blog_items">
+          <div class="">
+            <img
+              src="./images/AD0IlIOcDxACGAAgyPW1qwYo2pONsgMw_AM4iwI.jpg.webp"
+              alt=""
+              class="w-full bg-cover"
+            />
+          </div>
+          <div class="box-border grow w-full">
+            <div class="items-start block flex-wrap justify-between mt-0">
+              <h4
+                class="text-base text-[#333] font-normal leading-normal overflow-hidden break-all max-h-none mt-5 mb-0 mx-0 p-0 hover:text-[#07a6d3] [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical]"
+              >
+                Single Spring Hinge Installation Method Spring Hinge
+                Installation Precautions
+              </h4>
+              <span
+                class="text-[#999] text-sm leading-none inline-block max-w-full mt-[9px]"
+              >
+                2023-12-04
+              </span>
+            </div>
+            <div
+              class="text-[#666] text-sm leading-[1.7] break-words overflow-hidden text-ellipsis break-all max-h-none mt-[18px] [-webkit-box-orient:vertical] [display:-webkit-box] [-webkit-line-clamp:1]"
+            >
+              Although hinges are small and inconspicuous, spring hinges are
+              crucial in daily life. In addition to careful selection, we also
+              need to install them properly when using them. So, what are the
+              insta...
+            </div>
+            <div
+              class="mt-5 after:clear-both after:content-[''] after:table after:h-0 after:leading-[0]"
+            >
+              <div
+                class="leading-none inline-block text-left w-[calc(100%_-_40px)] -mt-3"
+              >
+                <a
+                  class="no-underline border border-neutral-200 text-[#999] inline-block text-xs h-[26px] leading-[26px] max-w-full overflow-hidden relative break-keep z-[2] mr-[15px] mt-3 px-2 py-0 rounded-[5px] border-solid"
+                  href="https://fkwwm08.demo.webportal.top/en/nr.jsp?_reqArgs=%7B%22args%22%3A%7B%22groupId%22%3A2%2C%22jpt%22%3A4%7D%2C%22type%22%3A32%7D"
+                >
+                  NEWS
+                </a>
+              </div>
+              <div
+                class="block float-right h-7 max-w-full overflow-hidden relative w-10 before:content-[''] before:inline-block before:h-7 before:absolute before:transition-[0.36s] before:w-[30px] before:left-0 before:top-0 after:content-[''] after:inline-block after:h-7 after:absolute after:transition-[0.36s] after:w-[30px] after:left-[-30px] after:opacity-0 after:top-0"
+              >
+                <div
+                  class="hidden hover:animate-[0.36s_newsListArrow] arr"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="go_our p-20 bg-gray-100">
+      <div class="title_left pb-10 text-center">
+        <p>Get Our Latest Update !</p>
+        <p>Feel free to leave us a message if you have any questions</p>
+      </div>
+      <ul class="list-none block mx-auto w-1/2 text-[0px]">
+        <li
+          class="box-border inline-block list-none align-bottom w-full mb-5 px-[1.2%] py-0 ZslnHD"
+        >
+          <div class="relative">
+            <h3
+              class="text-sm text-[#666] font-normal hidden mt-0 mb-3 mx-0 p-0"
+            >
+              <span class="bg-clip-text">Name</span>
+              <span
+                class="text-[red] inline-block pointer-events-none relative left-2.5 top-0.5"
+              >
+                *
+              </span>
+            </h3>
+            <div class="box-border relative">
+              <span
+                class="text-[red] inline-block pointer-events-none absolute text-[13px] leading-[44px] left-2 top-0.5"
+              >
+                *
+              </span>
+              <input
+                class="text-[13px] leading-[44px] appearance-none border box-border text-[#333] h-11 w-full m-0 pl-[18px] pr-0 py-0 rounded-sm border-solid border-[#e0e0e0] focus:border-[#07a6d3] [background:#fff] [outline:0]"
+                value=""
+                placeholder="Enter Your Name"
+                maxlength="100"
+              />
+            </div>
+          </div>
+        </li>
+        <li
+          class="box-border inline-block list-none align-bottom w-full mb-5 px-[1.2%] py-0 UmkIhk"
+        >
+          <div class="relative">
+            <h3
+              class="text-sm text-[#666] font-normal hidden mt-0 mb-3 mx-0 p-0"
+            >
+              <span class="bg-clip-text">Email</span>
+              <span
+                class="text-[red] inline-block pointer-events-none relative left-2.5 top-0.5"
+              >
+                *
+              </span>
+            </h3>
+            <div class="box-border relative">
+              <span
+                class="text-[red] inline-block pointer-events-none absolute text-[13px] leading-[44px] left-2 top-0.5"
+              >
+                *
+              </span>
+              <input
+                class="text-[13px] leading-[44px] appearance-none border box-border text-[#333] h-11 w-full m-0 pl-[18px] pr-0 py-0 rounded-sm border-solid border-[#e0e0e0] focus:border-[#07a6d3] [background:#fff] [outline:0]"
+                value=""
+                placeholder="Enter Your Email Address"
+                maxlength="50"
+              />
+            </div>
+          </div>
+        </li>
+        <li
+          class="box-border inline-block list-none align-bottom w-full mt-2.5 mb-5 px-[1.2%] py-0 bxOVHt"
+        >
+          <div class="relative">
+            <h3
+              class="text-sm text-[#666] font-normal hidden mt-0 mb-3 mx-0 p-0"
+            >
+              <span class="bg-clip-text"></span>
+            </h3>
+            <div
+              class="inline-block overflow-hidden relative transition-[0.3s] w-full before:content-[''] before:block before:h-0 before:absolute before:-translate-x-2/4 before:-translate-y-2/4 before:transition-[0.6s] before:w-full before:pt-[100%] before:rounded-[50%] before:left-2/4 before:top-2/4"
+            >
+              <button
+                class="bg-[#1295e5] text-base leading-[44px] rounded box-border relative text-white cursor-pointer h-11 w-full transition-[0.3s] z-[1] m-0 p-0 border-[none] hover:bg-[#0a85d1] [outline:0]"
+              >
+                Submit Now
+              </button>
+              <span
+                class="content-[''] block h-full opacity-0 absolute transition-[0.3s] w-0 z-0 top-0"
+              ></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer p-20 bg-black">
+      <div class="grid grid-cols-10 gap-20">
+        <div class="col-span-3">
+          <p class="title text-white mb-5">CONTACT US</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/003.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Address：XXX Road, XXX County, XXX City, XXX Province
+            </li>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/002.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Telephone：020-0000-0000
+            </li>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/004.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Contact email:：xxx@.co.m
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-3">
+          <p class="title text-white mb-5">ABOUT US</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              Provide accurate purchasing information for foreign trade hardware
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-2">
+          <p class="title text-white mb-5">PRODUCTS</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              Electric Drill Bearing Screwdriver
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <img
+            src="./images/AD0IlIOcDxAEGAAg3-y1qwYo06_G_AQwsgI4sAE.png.webp"
+            class="w-full"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        navbar.classList.add("bg-black", "bg-opacity-60");
+      } else {
+        navbar.classList.remove("bg-black", "bg-opacity-60");
+      }
+    });
+  </script>
+</html>

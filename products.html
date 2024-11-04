@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav class="fixed top-0 z-20 w-full" id="navbar">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#"
+                  class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Cases</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >Contact us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="top p-20 flex items-center">
+      <p class="text-white">— Products</p>
+    </div>
+
+    <div class="products_home p-20">
+      <div class="title_left">
+        <p class="text-center">Favourite Onlite Tools</p>
+        <div class="box-border h-full relative w-1/2 mx-auto p-10">
+          <div
+            class="bg-white flex h-full overflow-hidden border rounded-[3px] border-solid border-[#eee]"
+          >
+            <div class="flex-1">
+              <input
+                class="text-[100%] leading-normal px-2 appearance-none bg-transparent block h-full w-full m-0 py-2 border-[none] [outline:0] text-[#888] opacity-[0.54]"
+                value=""
+                maxlength="100"
+                placeholder="Type in the name of the product you want to bug"
+                type="text"
+              />
+            </div>
+            <a
+              class="bg-[#07a6d3] no-underline fill-white items-center text-white cursor-pointer flex h-full py-2 justify-center w-[50px]"
+            >
+              <img src="./images/1730743012069.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="products_nav mb-5 border-b">
+        <ul class="flex flex-wrap justify-end m-0 p-0">
+          <li
+            class="text-[#202020] items-center box-border cursor-pointer flex text-sm justify-center max-w-[360px] min-w-[54px] text-center relative transition-[background] duration-[0.5s] mx-[5px] my-0 px-5 py-4 [-webkit-tap-highlight-color:transparent] [list-style:none]"
+          >
+            <span class="relative w-full">
+              <span
+                class="block float-left overflow-hidden text-ellipsis whitespace-nowrap w-full text-lg no-underline text-[#0691b8]"
+              >
+                Hammer Tool
+              </span>
+            </span>
+            <i
+              class="bg-[#07a6d3] block h-0.5 absolute w-full left-0 bottom-0"
+            ></i>
+            <i class="border-[#07a6d3]"></i>
+          </li>
+          <div class="items-center flex px-0 py-2.5">
+            <i class="block h-4 w-px [background:#dcdcdc]"></i>
+          </div>
+          <li
+            class="items-center box-border cursor-pointer flex text-sm justify-center max-w-[360px] min-w-[54px] text-center text-[#202020] relative transition-[background] duration-[0.5s] mx-[5px] my-0 px-5 py-4 [-webkit-tap-highlight-color:transparent] [list-style:none]"
+          >
+            <span class="relative w-full">
+              <span
+                class="block float-left overflow-hidden text-ellipsis whitespace-nowrap w-full text-lg no-underline text-[#777]"
+              >
+                Decker Tool
+              </span>
+            </span>
+            <i
+              class="bg-[#07a6d3] hidden h-0.5 absolute w-full left-0 bottom-0"
+            ></i>
+            <i class="border-[#07a6d3]"></i>
+          </li>
+          <div class="items-center flex px-0 py-2.5">
+            <i class="block h-4 w-px [background:#dcdcdc]"></i>
+          </div>
+          <li
+            class="items-center box-border cursor-pointer flex text-sm justify-center max-w-[360px] min-w-[54px] text-center text-[#202020] relative transition-[background] duration-[0.5s] mx-[5px] my-0 px-5 py-4 [-webkit-tap-highlight-color:transparent] [list-style:none]"
+          >
+            <span class="relative w-full">
+              <span
+                class="block float-left overflow-hidden text-ellipsis whitespace-nowrap w-full text-lg no-underline text-[#777]"
+              >
+                Drill Tool
+              </span>
+            </span>
+            <i
+              class="bg-[#07a6d3] hidden h-0.5 absolute w-full left-0 bottom-0"
+            ></i>
+            <i class="border-[#07a6d3]"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-4 gap-8">
+        <div class="col-span-1 goods_item">
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-1 goods_item">
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-1 goods_item">
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-1 goods_item">
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-1 goods_item">
+          <div>
+            <a
+              class="no-underline text-[#333] block h-full overflow-hidden relative z-[1] p-[5%] hover:text-[#07a6d3] hover:border-[#07a6d3]"
+              href="https://fkwwm08.demo.webportal.top/en/pd.jsp?id=9"
+            >
+              <div class="overflow-hidden relative w-full pb-[100%]">
+                <img
+                  data-loaded="true"
+                  src="https://31916436.s61i.faiusr.com/2/AD0IlIOcDxACGAAgncW2qwYo5pfKowEwoAY4oAY!700x700.jpg.webp"
+                  class="align-top max-w-full cursor-pointer h-full object-cover object-[center_center] absolute transition-[0.36s] w-full border-0 inset-x-0"
+                />
+                <div
+                  class="items-center bg-white box-border hidden h-12 justify-center absolute w-12 rounded-[50%] right-4 bottom-4 hover:flex [filter:drop-shadow(rgba(0, 0, 0, .16) 0px 6px 6px)]"
+                >
+                  <svg></svg>
+                </div>
+              </div>
+              <div class="box-border overflow-hidden">
+                <div class="leading-[1.715] mt-[15px] mb-[5px]">
+                  <span class="text-base hover:text-[#07a6d3]">Bearing</span>
+                </div>
+                <div class="exhibition_product_prop_wrap">
+                  <ul class="list-none m-0 p-0"></ul>
+                </div>
+                <div
+                  class="overflow-hidden text-ellipsis whitespace-nowrap pt-[5px]"
+                >
+                  <span class="text-[#07a6d3]">
+                    <span class="text-sm">$</span>
+                    <span class="text-lg">52.00</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <nav
+          class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+          aria-label="Pagination"
+        >
+          <a
+            href="#"
+            class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+          >
+            <span class="sr-only">Previous</span>
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+          <a
+            href="#"
+            aria-current="page"
+            class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >1</a
+          >
+          <a
+            href="#"
+            class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >2</a
+          >
+          <a
+            href="#"
+            class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+            >3</a
+          >
+          <span
+            class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0"
+            >...</span
+          >
+          <a
+            href="#"
+            class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+            >8</a
+          >
+          <a
+            href="#"
+            class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >9</a
+          >
+          <a
+            href="#"
+            class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >10</a
+          >
+          <a
+            href="#"
+            class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+          >
+            <span class="sr-only">Next</span>
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer p-20 bg-black">
+      <div class="grid grid-cols-10 gap-20">
+        <div class="col-span-3">
+          <p class="title text-white mb-5">CONTACT US</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/003.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Address：XXX Road, XXX County, XXX City, XXX Province
+            </li>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/002.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Telephone：020-0000-0000
+            </li>
+            <li class="text-gray-500 mb-2">
+              <img
+                src="./images/004.webp"
+                class="inline-block mr-2"
+                alt=""
+              />Contact email:：xxx@.co.m
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-3">
+          <p class="title text-white mb-5">ABOUT US</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              Provide accurate purchasing information for foreign trade hardware
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-2">
+          <p class="title text-white mb-5">PRODUCTS</p>
+          <ul>
+            <li class="text-gray-500 mb-2">
+              Electric Drill Bearing Screwdriver
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <img
+            src="./images/AD0IlIOcDxAEGAAg3-y1qwYo06_G_AQwsgI4sAE.png.webp"
+            class="w-full"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        navbar.classList.add("bg-black", "bg-opacity-60");
+      } else {
+        navbar.classList.remove("bg-black", "bg-opacity-60");
+      }
+    });
+  </script>
+</html>

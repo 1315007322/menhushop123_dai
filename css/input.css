@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 768px) {
+  .JSiOsa {
+    @apply bg-none bg-[#f2f5f9] bg-cover bg-no-repeat bg-[center_center] m-0 p-0;
+  }
+  .DeXKbr {
+    @apply m-0;
+  }
+  .uFTvBO {
+    @apply m-0;
+  }
+  .qAwAvo {
+    @apply m-0;
+  }
+  .VDNIJx {
+    @apply m-0;
+  }
+  .PuJPNw {
+    @apply m-0;
+  }
+  .qttYcf {
+    @apply m-0;
+  }
+  .YCRRwq {
+    @apply m-0;
+  }
+  .folmUs {
+    @apply m-0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .EKAHGZ {
+    @apply w-full ml-0 mt-0;
+  }
+  .DIPrce {
+    @apply w-9/12;
+  }
+  .eUAyXu {
+    @apply w-full ml-0 mt-0;
+  }
+  .slmPvg {
+    @apply w-9/12;
+  }
+  .QpwrSe {
+    @apply w-full ml-0 mt-0;
+  }
+  .scuLlq {
+    @apply w-9/12;
+  }
+  .akFXmX {
+    @apply w-full ml-0 mt-0;
+  }
+  .gKFxaS {
+    @apply w-9/12;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mkmbjr {
+    @apply m-0 p-0;
+  }
+  .zUgxuJ {
+    @apply m-0;
+  }
+  .KzcAcL {
+    @apply ml-[1.78082%] mr-[74.9315%] mt-[0.8vw] mb-[0.533333vw];
+  }
+  .RyfJRM {
+    @apply h-[38px];
+  }
+  .lUbBib {
+    @apply mt-[0.8vw] mb-[0.533333vw] mx-[3.733%];
+  }
+  .VNDNzP {
+    @apply ml-[2.60274%] mr-[63.9726%] mt-[0.8vw] mb-[0.533333vw];
+  }
+  .ZcVJoc {
+    @apply h-10;
+  }
+  .znQHMX {
+    @apply m-0;
+  }
+  .ncQztw {
+    @apply mt-[0.8vw] mb-[0.533333vw] mx-[3.733%];
+  }
+  .YWfRbs {
+    @apply ml-[3.42466%] mr-[62.8767%] mt-[0.8vw] mb-[0.533333vw];
+  }
+  .Wiqadx {
+    @apply h-[41px];
+  }
+  .fnhWlU {
+    @apply m-0;
+  }
+  .jyxDaJ {
+    @apply mt-[0.8vw] mb-[0.533333vw] mx-[3.733%];
+  }
+  .kwUXWm {
+    @apply ml-[3.15068%] mr-[62.8767%] mt-[0.8vw] mb-[0.533333vw];
+  }
+  .BBDzIQ {
+    @apply h-[41px];
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .KwebBM {
+    @apply text-[15px];
+  }
+  .UuCrwt {
+    @apply text-[15px];
+  }
+  .akIqJZ {
+    @apply text-[15px];
+  }
+}
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .KwebBM {
+    @apply text-base;
+  }
+  .UuCrwt {
+    @apply text-base;
+  }
+  .akIqJZ {
+    @apply text-base;
+  }
+}
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .KwebBM {
+    @apply text-[26px];
+  }
+  .UuCrwt {
+    @apply text-[26px];
+  }
+  .akIqJZ {
+    @apply text-[26px];
+  }
+}
+@media (min-width: 3840px) {
+  .KwebBM {
+    @apply text-[40px];
+  }
+  .UuCrwt {
+    @apply text-[40px];
+  }
+  .akIqJZ {
+    @apply text-[40px];
+  }
+}
+@media screen� {
+  .CtDHlP {
+    @apply bg-none;
+  }
+  .GnSByk {
+    @apply bg-none;
+  }
+  .LwITZA {
+    @apply bg-none;
+  }
+  .BBMQpj {
+    @apply bg-none;
+  }
+  .PkLOyB {
+    @apply bg-none;
+  }
+  .ASVbCU {
+    @apply bg-none;
+  }
+  .MFSlMu {
+    @apply bg-none;
+  }
+  .oPsYdM {
+    @apply bg-none;
+  }
+  .heIhUC {
+    @apply bg-none;
+  }
+  .IxCgYk {
+    @apply bg-none;
+  }
+  .Yndjhx {
+    @apply bg-none;
+  }
+  .KsdNmG {
+    @apply bg-none;
+  }
+  .QAAzIo {
+    @apply bg-none;
+  }
+  .ZFvJGt {
+    @apply bg-none;
+  }
+  .yHrIps {
+    @apply bg-none;
+  }
+  .MjbIRN {
+    @apply bg-none;
+  }
+  .uYzdwu {
+    @apply bg-none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ZslnHD {
+    @apply w-[33.6688%];
+  }
+  .UmkIhk {
+    @apply w-[38.7854%];
+  }
+  .bxOVHt {
+    @apply w-[27.1483%];
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .PbrJgG {
+    @apply m-0 p-0;
+  }
+  .ywGXVt {
+    @apply m-0;
+  }
+  .upoIYf {
+    @apply mt-[2.66667vw] mb-[1.33333vw] mx-[3.733%];
+  }
+  .plCnaV {
+    @apply m-0;
+  }
+  .YafCOp {
+    @apply m-0;
+  }
+  .ddREId {
+    @apply m-0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .mWTMYb {
+    @apply text-[15px];
+  }
+}
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .mWTMYb {
+    @apply text-base;
+  }
+}
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .mWTMYb {
+    @apply text-[26px];
+  }
+}
+@media (min-width: 3840px) {
+  .mWTMYb {
+    @apply text-[40px];
+  }
+}
+@media screen� {
+  .YzgfWu {
+    @apply bg-none;
+  }
+  .hByaEc {
+    @apply bg-none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .gAyPFP {
+    @apply w-full ml-0 mt-0;
+  }
+  .FaKhGw {
+    @apply w-[93%];
+  }
+  .ivLhOZ {
+    @apply w-full ml-0;
+  }
+  .cmchTu {
+    @apply w-[93%];
+  }
+  .RpjkRn {
+    @apply w-full ml-0;
+  }
+  .povdhj {
+    @apply w-[93%];
+  }
+  .wiHTVr {
+    @apply w-full ml-0;
+  }
+  .ulEYVn {
+    @apply w-[93%];
+  }
+}
