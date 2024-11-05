@@ -10,6 +10,12 @@
     .top{
         @apply p-5
     }
+    .product_detail{
+        @apply p-5
+    }
+    .case_detail{
+        @apply p-5
+    }
     .contact_wrap .cc-oo{
         @apply block
     }

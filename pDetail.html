@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+<nav class="fixed top-0 z-20 w-full" id="navbar">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button
+                        type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                >
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                        Icon when menu is closed.
+
+                        Menu open: "hidden", Menu closed: "block"
+                      -->
+                    <svg
+                            class="block h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
+                    <!--
+                        Icon when menu is open.
+
+                        Menu open: "block", Menu closed: "hidden"
+                      -->
+                    <svg
+                            class="hidden h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18 18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div
+                    class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+                <div class="flex flex-shrink-0 items-center">
+                    <img
+                            class="h-8 w-auto"
+                            src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                            alt="Your Company"
+                    />
+                </div>
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a
+                                href="./index.html"
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                                aria-current="page"
+                        >Home</a
+                        >
+                        <a
+                                href="./products.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        >Product</a
+                        >
+                        <a
+                                href="./case.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        >Cases</a
+                        >
+                        <a
+                                href="./contact.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        >Contact us</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+                    href="./index.html"
+                    class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page"
+            >Home</a
+            >
+            <a
+                    href="./products.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Products</a
+            >
+            <a
+                    href="./case.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Cases</a
+            >
+            <a
+                    href="./contact.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Contact Us</a
+            >
+        </div>
+    </div>
+</nav>
+<div class="top p-20 flex items-center">
+    <p class="text-white">— Hammer</p>
+</div>
+<div class="product_detail p-20">
+<!--    <div class="title_left text-center pb-24">-->
+<!--        <p>-->
+<!--            Hammer-->
+<!--        </p>-->
+<!--    </div>-->
+    <img src="./images/AD0IlIOcDxACGAAgjMa2qwYo54e5vgQwoAY4oAY.jpg" class="mx-auto mb-10" alt="">
+    <div data-v-4170bb82="" class="box-border text-[#333] text-[0px] w-full">
+        <div data-v-4170bb82="" class="detail_specific_tab_wrap">
+            <div data-v-4170bb82="" class="border border-solid border-[#f0f0f0]">
+      <span
+              data-v-4170bb82=""
+              class="text-[#07a6d3] box-border cursor-pointer inline-block text-[15px] leading-[54px] overflow-hidden text-center text-ellipsis transition-[0.3s] whitespace-nowrap w-40 relative px-2 py-0 border-r-[#f0f0f0] border-r border-solid before:box-border before:content-['_'] before:absolute before:w-full before:border-2 before:border-solid before:left-0 before:-top-px [-webkit-tap-highlight-color:transparent]"
+      >
+        <span data-v-4170bb82="">Detail</span>
+      </span>
+            </div>
+        </div>
+        <div data-v-4170bb82="" class="text-[#333] text-sm mx-0 my-[25px]">
+            <div data-v-4170bb82="" class="block">
+                <div class="min-h-[1.5em]">
+                    <p class="leading-[1.5em] m-0 p-0">
+                        It refers to the general term for various metal devices manufactured
+                        by physical processing such as forging, rolling, and cutting of metals
+                        such as iron, steel, and aluminum. Hardware tools can be divided into
+                        several categories based on the purpose of the product, including tool
+                        hardware, construction hardware, daily hardware, lock and grinding
+                        tools, kitchen and bathroom hardware, home hardware, and hardware
+                        components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer p-20 bg-black">
+    <div class="grid grid-cols-10 gap-20">
+        <div class="col-span-3">
+            <p class="title text-white mb-5">CONTACT US</p>
+            <ul>
+                <li class="text-gray-500 mb-2">
+                    <img
+                            src="./images/003.webp"
+                            class="inline-block mr-2"
+                            alt=""
+                    />Address：XXX Road, XXX County, XXX City, XXX Province
+                </li>
+                <li class="text-gray-500 mb-2">
+                    <img
+                            src="./images/002.webp"
+                            class="inline-block mr-2"
+                            alt=""
+                    />Telephone：020-0000-0000
+                </li>
+                <li class="text-gray-500 mb-2">
+                    <img
+                            src="./images/004.webp"
+                            class="inline-block mr-2"
+                            alt=""
+                    />Contact email:：xxx@.co.m
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-3">
+            <p class="title text-white mb-5">ABOUT US</p>
+            <ul>
+                <li class="text-gray-500 mb-2">
+                    Provide accurate purchasing information for foreign trade hardware
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-2">
+            <p class="title text-white mb-5">PRODUCTS</p>
+            <ul>
+                <li class="text-gray-500 mb-2">
+                    Electric Drill Bearing Screwdriver
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-span-2">
+            <img
+                    src="images/AD0IlIOcDxAEGAAg3-y1qwYo06_G_AQwsgI4sAE.png"
+                    class="w-full"
+                    alt=""
+            />
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script>
+		const navbar = document.getElementById("navbar");
+		if (window.innerWidth < 769) {
+				navbar.classList.add("bg-black", "bg-opacity-60");
+		}else{
+				window.addEventListener("scroll", () => {
+						if (window.scrollY > 500) {
+								navbar.classList.add("bg-black", "bg-opacity-60");
+						} else {
+								navbar.classList.remove("bg-black", "bg-opacity-60");
+						}
+				})
+		}
+
+
+		// 获取菜单按钮和导航菜单
+		const menuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+		const mobileMenu = document.getElementById('mobile-menu');
+
+		// 添加点击事件监听
+		menuButton.addEventListener('click', () => {
+				// 切换 aria-expanded 属性值
+				const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+				menuButton.setAttribute('aria-expanded', !isExpanded);
+
+				// 切换导航菜单的显示状态
+				mobileMenu.classList.toggle('hidden');
+		});
+</script>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+<nav class="fixed top-0 z-20 w-full" id="navbar">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button
+                        type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                >
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                        Icon when menu is closed.
+
+                        Menu open: "hidden", Menu closed: "block"
+                      -->
+                    <svg
+                            class="block h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
+                    <!--
+                        Icon when menu is open.
+
+                        Menu open: "block", Menu closed: "hidden"
+                      -->
+                    <svg
+                            class="hidden h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18 18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div
+                    class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+                <div class="flex flex-shrink-0 items-center">
+                    <img
+                            class="h-8 w-auto"
+                            src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                            alt="Your Company"
+                    />
+                </div>
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a
+                                href="./index.html"
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                                aria-current="page"
+                        >Home</a
+                        >
+                        <a
+                                href="./products.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        >Product</a
+                        >
+                        <a
+                                href="./case.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        >Cases</a
+                        >
+                        <a
+                                href="./contact.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                        >Contact us</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+                    href="./index.html"
+                    class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page"
+            >Home</a
+            >
+            <a
+                    href="./products.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Products</a
+            >
+            <a
+                    href="./case.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Cases</a
+            >
+            <a
+                    href="./contact.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Contact Us</a
+            >
+        </div>
+    </div>
+</nav>
+
+<div class="case_detail p-20 mt-20">
+    <div class="text-[0px] leading-none pb-5 px-5">
+        <div class="news_detail_header">
+            <h1
+                    class="text-[22px] text-[#333] font-normal leading-[1.3] m-0 pt-6 pb-0 px-0"
+            >
+                How to choose hardware hinges for doors and windows? Notes on hinge
+                selection
+            </h1>
+            <div
+                    class="text-[#999] flex flex-wrap text-[0px] justify-between mt-9 mb-6"
+            >
+                <div class="news_detail_info_left">
+                    <span class="text-sm mr-[22px]">2023-12-04 16:43</span>
+                </div>
+                <div class="news_detail_info_right"></div>
+            </div>
+        </div>
+        <div class="mb-[30px] pt-[30px] border-t-[#ebebeb] border-t border-solid">
+            <div class="break-words text-[#666] text-sm leading-[2.8]">
+                <div class="jz_fix_ue_img">
+                    <p class="m-0 p-0">
+                        1. The materials used should be corrosion-resistant and of solid
+                        quality
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        When purchasing hinges, it is necessary to choose according to the
+                        environment and material characteristics. When purchasing, you can
+                        also weigh the weight of similar products from different brands, and
+                        it is better to choose products with thick quality.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        Steel hinges are prone to rusting and are not suitable for general use
+                        in humid environments; Copper hinges have corrosion resistance and
+                        antibacterial properties, making them suitable for use in bathrooms;
+                        Aluminum hinges have lower strength and are generally thicker;
+                        Stainless steel material has good decorative and functional
+                        properties, making it a common choice for many households. However,
+                        when purchasing, it is important to be careful when merchants use
+                        products with surface coatings that may confuse the market.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        2. Smooth appearance and excellent surface treatment
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        First, check if the surface material of the hinge is flat. If you see
+                        scratches or deformation, it indicates that the product is produced
+                        from waste materials; Secondly, carefully observe the surface
+                        treatment of the hinge, make a cut to see if the yellow copper layer
+                        is visible, or look inside the hinge cup. If the cup shows the same
+                        black color or iron color, it indicates that the electroplating layer
+                        is very thin and not plated with copper. If the brightness of the cup
+                        color is close to other parts, the electroplating is qualified.
+                        Overall, well crafted hinges have a beautiful appearance and small
+                        gaps, making them more reliable to use.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">3. Large bearing diameter and thick wall plate</p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        The quality of the flat hinge mainly depends on the quality of the
+                        bearings. The larger the diameter of the bearing, the better. The
+                        thicker the wall panel, the better. Hold one hinge flat in your hand
+                        and let the other slide freely, with a uniform and slow speed.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        4. Close and listen to the sound of the spring, loosen the hinge test
+                        cup
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        The hinge key serves as a switch, so this is very important. The key
+                        is taken from the outer and inner springs of the hinge, as well as the
+                        assembly of rivets.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        Listen to the sound of the hinge closing, whether it is clear. If the
+                        closing sound is dull, it indicates that the spring force is not
+                        enough and there is an issue with the material thickness; Check if the
+                        hinge cup is loose. If it is loose, it indicates that the rivet is not
+                        tightly riveted and is prone to detachment. Close the cup a few times
+                        to see if the indentation is obvious. If it is obvious, it indicates
+                        that there is an issue with the thickness of the cup material, which
+                        can easily cause the cup to explode.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">5. Test screws and adjust with force</p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        Use a screwdriver to adjust the up and down adjustment screws three to
+                        four times with some force, then remove the screws and check if the
+                        teeth on the hinge arm are damaged.
+                    </p>
+                    <p class="m-0 p-0"><br /></p>
+                    <p class="m-0 p-0">
+                        Due to the fact that the hinge arm is made of iron material and is not
+                        as hard as screws, it is prone to wear and tear; In addition, if the
+                        accuracy of the factory's tooth tapping is not enough, it is easy to
+                        cause slipping or inability to twist.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-[26px] border-b-[#efefef] border-b border-dashed"></div>
+        <div class="box-border mt-[26px]">
+            <div
+                    class="items-start flex flex-nowrap leading-normal whitespace-nowrap w-full mb-[26px] after:clear-both after:content-['']"
+            >
+                <div class="flex grow shrink flex-wrap max-w-[calc(100%_-_50px)]"></div>
+                <div class="relative items-center">
+        <span
+                class="relative text-[#666] text-[13px] leading-normal align-middle whitespace-nowrap before:content-['򰉘'] before:mr-2.5"
+        >
+          share
+        </span>
+                    <div
+                            class="hidden"
+                            list="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                    >
+                        <div class="jz_share_layout"></div>
+                        <div
+                                class="shadow-[rgba(0,0,0,0.15)_0_0_20px] max-w-60 absolute text-left align-middle w-64 z-[1200] p-[15px] rounded-[5px] -right-2.5 top-[35px] before:content-[''] before:inline-block before:h-2.5 before:absolute before:rotate-45 before:w-2.5 before:z-[1] before:right-12 before:-top-1 after:content-[''] after:inline-block after:h-5 after:absolute after:top-[-15px] after:w-full after:right-0 [background:#fff]"
+                        >
+                            <a
+                                    class="no-underline text-[#46d42f] inline-block text-3xl align-middle m-[5px] before:content-['򰅂']"
+                                    title="WeChat"
+                            >
+                                <div class="text-[#333] hidden">WeChat</div>
+                            </a>
+                            <a
+                                    class="no-underline text-[#f44336] inline-block text-3xl align-middle m-[5px] before:content-['򰅃']"
+                                    title="Sina Weibo"
+                            >
+                                <div class="text-[#333] hidden">Sina Weibo</div>
+                            </a>
+                            <a
+                                    class="no-underline text-[#2992fc] inline-block text-3xl align-middle m-[5px] before:content-['򰅁']"
+                                    title="QQ"
+                            >
+                                <div class="text-[#333] hidden">QQ</div>
+                            </a>
+                            <a
+                                    class="no-underline text-[#ffce01] inline-block text-3xl align-middle m-[5px] before:content-['򰅄']"
+                                    title="QQ space"
+                            >
+                                <div class="text-[#333] hidden">QQ space</div>
+                            </a>
+                            <a
+                                    class="no-underline text-[#43c332] inline-block text-3xl align-middle m-[5px] before:content-['򰅈']"
+                                    title="Douban"
+                            >
+                                <div class="text-[#333] hidden">Douban</div>
+                            </a>
+                            <a
+                                    class="no-underline text-[#3986fb] inline-block text-3xl align-middle m-[5px] before:content-['򰅉']"
+                                    title="Baidu Post Bar"
+                            >
+                                <div class="text-[#333] hidden">Baidu Post Bar</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-[50px]">
+                <a
+                        class="no-underline border box-border text-[#6f6f6f] inline-block text-sm h-[25px] leading-[23px] mr-[15px] px-2.5 py-0 rounded-[3px] border-solid border-[#c7c7c7]"
+                        href="https://fkwwm08.demo.webportal.top/en/nr.jsp?_reqArgs=%7B%22args%22%3A%7B%22groupId%22%3A3%2C%22jpt%22%3A4%7D%2C%22type%22%3A32%7D"
+                >
+                    INFORMATION
+                </a>
+            </div>
+        </div>
+        <div class="news_comment_wrap">
+            <div class="pb-10">
+                <div class="hidden"></div>
+                <div class="creat_comment_form">
+                    <div class="flex news_creat_name">
+          <span class="text-[#666] inline-block text-sm align-middle w-[100px]">
+            name：
+          </span>
+                        <input
+                                class="text-[13px] leading-normal appearance-none border h-9 indent-[5px] align-middle w-[274px] m-0 p-0 rounded-[5px] border-solid border-[#e9e9e9] [outline:0]"
+                                type="text"
+                                minlength="2"
+                                maxlength="50"
+                                id="newsCreatName"
+                        />
+                    </div>
+                    <div class="flex mt-6">
+          <span
+                  class="text-[#666] inline-block text-sm align-top w-[100px] shrink-0 leading-[46px]"
+          >
+            Message：
+          </span>
+                        <textarea
+                                class="text-[13px] leading-normal border box-border h-[250px] resize-none w-full m-0 p-3.5 rounded-[5px] border-solid border-[#e9e9e9]"
+                                minlength="2"
+                                maxlength="1000"
+                                placeholder="No comments yet, come and post it~"
+                                id="newsCreatContent"
+                        ></textarea>
+                    </div>
+                    <div class="mt-[18px] flex">
+          <span class="text-[#666] inline-block text-sm align-middle w-[100px]">
+            Verification code：
+          </span>
+                        <input
+                                class="text-[13px] leading-normal appearance-none border h-9 align-middle w-[200px] m-0 p-0 rounded-[5px] border-solid border-[#e9e9e9]"
+                                maxlength="4"
+                                type="text"
+                                id="newsValidateCode"
+                        />
+                        <img
+                                class="align-middle max-w-full h-[34px] w-[94px] ml-2.5 border-0 inline-block"
+                                src="https://fkwwm08.demo.webportal.top/en/validateCode.jsp?682&validateCodeRegType=3"
+                                title="Change the Captcha."
+                                id="newsValidateCodeImg"
+                        />
+                    </div>
+                    <div class="mt-7">
+                        <div
+                                class="bg-[#07a6d3] text-white cursor-not-allowed text-sm h-10 leading-10 text-center w-3/12 opacity-50 mx-auto my-0 rounded-[40px]"
+                                id="newsSubmitBtn"
+                        >
+                            submit
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_content_wrapper">
+                <div class="mobi_news_comment_line">
+        <span
+                class="hidden before:content-['򰉡']"
+                id="mobiNewsDetailCommentEnter"
+        >
+          Comment
+        </span>
+                </div>
+                <div class="h-20 absolute w-20 hidden -ml-10 -mt-10 left-2/4 top-2/4">
+                    <div
+                            class="h-full absolute w-full left-0 top-0 before:animate-[1.2s_ease-in-out_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[40deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.8s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[80deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.7s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[120deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.6s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[160deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.5s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[200deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.4s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[240deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.3s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[280deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.2s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                    <div
+                            class="h-full absolute w-full rotate-[320deg] left-0 top-0 before:animate-[1.2s_ease-in-out_-0.1s_infinite_both_fk-circleBounceDelay] before:bg-[#cdd5f3] before:content-[''] before:block before:h-1/5 before:w-1/5 before:mx-auto before:my-0 before:rounded-[100%]"
+                    ></div>
+                </div>
+                <div class="news_comment_list"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer p-20 bg-black">
+    <div class="grid grid-cols-10 gap-20">
+        <div class="col-span-3">
+            <p class="title text-white mb-5">CONTACT US</p>
+            <ul>
+                <li class="text-gray-500 mb-2">
+                    <img
+                            src="./images/003.webp"
+                            class="inline-block mr-2"
+                            alt=""
+                    />Address：XXX Road, XXX County, XXX City, XXX Province
+                </li>
+                <li class="text-gray-500 mb-2">
+                    <img
+                            src="./images/002.webp"
+                            class="inline-block mr-2"
+                            alt=""
+                    />Telephone：020-0000-0000
+                </li>
+                <li class="text-gray-500 mb-2">
+                    <img
+                            src="./images/004.webp"
+                            class="inline-block mr-2"
+                            alt=""
+                    />Contact email:：xxx@.co.m
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-3">
+            <p class="title text-white mb-5">ABOUT US</p>
+            <ul>
+                <li class="text-gray-500 mb-2">
+                    Provide accurate purchasing information for foreign trade hardware
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-2">
+            <p class="title text-white mb-5">PRODUCTS</p>
+            <ul>
+                <li class="text-gray-500 mb-2">
+                    Electric Drill Bearing Screwdriver
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-span-2">
+            <img
+                    src="images/AD0IlIOcDxAEGAAg3-y1qwYo06_G_AQwsgI4sAE.png"
+                    class="w-full"
+                    alt=""
+            />
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script>
+		const navbar = document.getElementById("navbar");
+		if (window.innerWidth < 769) {
+				navbar.classList.add("bg-black", "bg-opacity-60");
+		}else{
+				window.addEventListener("scroll", () => {
+						if (window.scrollY > 500) {
+								navbar.classList.add("bg-black", "bg-opacity-60");
+						} else {
+								navbar.classList.remove("bg-black", "bg-opacity-60");
+						}
+				})
+		}
+
+
+		// 获取菜单按钮和导航菜单
+		const menuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+		const mobileMenu = document.getElementById('mobile-menu');
+
+		// 添加点击事件监听
+		menuButton.addEventListener('click', () => {
+				// 切换 aria-expanded 属性值
+				const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+				menuButton.setAttribute('aria-expanded', !isExpanded);
+
+				// 切换导航菜单的显示状态
+				mobileMenu.classList.toggle('hidden');
+		});
+</script>
+</html>
