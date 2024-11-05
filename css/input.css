@@ -3,35 +3,214 @@
 @tailwind utilities;
 
 @media screen and (max-width: 768px) {
+    .banner{
+        height: 300px;
+
+    }
+    .top{
+        @apply p-5
+    }
+    .contact_wrap .cc-oo{
+        @apply block
+    }
+    .contact_wrap .cc-oo a{
+        @apply w-full
+    }
+    .contact_wrap{
+        @apply block;
+    }
+    .contact_wrap .contact_title{
+        font-size: 30px;
+    }
+    .contact_wrap > div{
+        @apply w-full
+    }
+    .cases{
+        @apply p-2
+    }
+    .cases .items .tttitle{
+        @apply overflow-hidden overflow-ellipsis  whitespace-nowrap
+    }
+    .cases .items .more{
+        @apply block text-center p-0;
+        line-height: 40px;
+
+        height: 40px;
+    }
+    .cases .leading-none{
+        @apply m-0
+    }
+
+    .cases .items{
+        @apply  block
+    }
+    .cases .items h4{
+        @apply w-full
+    }
+    .roPMCD{
+        @apply p-0
+    }
+    .cases .items a{
+        @apply w-full block p-2
+    }
+
+    .product_product{
+        @apply p-5;
+    }
+    .product_product .input{
+        @apply w-full p-2
+    }
+    .product_product .goods{
+        @apply grid-cols-1
+    }
+    .jz_web_row{
+        @apply grid-cols-1 gap-1;
+        height: auto;
+    }
+    .products_home{
+        @apply p-5;
+    }
+    .Latest_Blog_grid{
+        @apply grid-cols-1 gap-1
+    }
+    .blog_items{
+        @apply p-5
+    }
+    .go_our_form{
+        @apply w-full
+    }
+    .footer{
+        @apply p-5
+    }
+    .footer .grid{
+        @apply grid-cols-1
+    }
+
+    .title_left p:nth-child(1) {
+        font-size: 26px;
+    }
+    .go_our{
+        @apply p-5;
+    }
+    .title_left p:nth-child(2) {
+        margin: 10px 0;
+    }
+    .discount .items{
+        padding: 20px 30px;
+    }
+    .featured{
+        @apply p-5;
+    }
+    .featured_grid{
+        @apply grid-cols-1;
+    }
+    .featured-center{
+        @apply p-5;
+    }
+    .Latest_Blog{
+        @apply p-5;
+    }
+    .featured_items{
+        @apply p-5
+    }
+    .products_nav li{
+        @apply p-1
+    }
+    .discount_grid{
+        @apply grid-cols-1
+    }
+    .discount{
+        @apply p-5;
+    }
+    .mySwiper swiper-slide {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 0;
+    }
+    .products_nav li span{
+        font-size: 14px;
+    }
+    .jz_web_row__content{
+        padding: 20px;
+    }
+    .section3{
+        @apply p-5
+    }
+    .banner swiper-slide{
+        @apply p-6
+    }
+    .banner swiper-slide p:nth-child(1) {
+        @apply pt-14;
+        font-size: 20px;
+    }
+    .banner swiper-slide p:nth-child(2) {
+        @apply my-2;
+        font-size: 25px;
+    }
+    .banner swiper-slide p:nth-child(3) {
+        font-size: 20px;
+    }
+    .banner swiper-slide a {
+        @apply mt-3;
+    }
   .JSiOsa {
     @apply bg-none bg-[#f2f5f9] bg-cover bg-no-repeat bg-[center_center] m-0 p-0;
   }
   .DeXKbr {
-    @apply m-0;
+    @apply m-0 col-span-1 w-full p-5;
+  }
+  .ahh{
+      @apply grid grid-cols-1 gap-4;
   }
   .uFTvBO {
     @apply m-0;
   }
   .qAwAvo {
-    @apply m-0;
+    @apply m-0 w-full p-5;
   }
   .VDNIJx {
     @apply m-0;
   }
   .PuJPNw {
-    @apply m-0;
+    @apply m-0 w-full p-5;
   }
   .qttYcf {
     @apply m-0;
   }
   .YCRRwq {
-    @apply m-0;
+    @apply m-0 w-full p-5;
   }
   .folmUs {
     @apply m-0;
   }
+    .EKAHGZ {
+        @apply w-full ml-0 mt-0;
+    }
+    .eUAyXu {
+        @apply w-full ml-0 mt-0;
+    }
+    .QpwrSe {
+        @apply w-full ml-0 mt-0;
+    }
+    .akFXmX {
+        @apply w-full ml-0 mt-0;
+    }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .jz_web_row__content{
+        padding: 20px;
+    }
+    .blog_items{
+        @apply p-5
+    }
+    .section3,.products_home,.discount,.featured,.people,.Latest_Blog,.footer{
+        @apply p-10
+    }
+    .featured_grid{
+        @apply grid-cols-2
+    }
   .EKAHGZ {
     @apply w-full ml-0 mt-0;
   }
@@ -122,6 +301,7 @@
   }
   .UuCrwt {
     @apply text-base;
+
   }
   .akIqJZ {
     @apply text-base;
