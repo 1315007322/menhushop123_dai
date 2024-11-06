@@ -742,6 +742,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-\[25px\] {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -859,6 +864,10 @@ video {
   margin-top: 0.625rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -905,10 +914,6 @@ video {
 
 .mt-\[9px\] {
   margin-top: 9px;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .box-border {
@@ -1285,6 +1290,10 @@ video {
   gap: 5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -1578,6 +1587,10 @@ video {
   padding: 0px;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -1596,6 +1609,10 @@ video {
 
 .p-3\.5 {
   padding: 0.875rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-\[0\.581395\%\] {
@@ -1636,6 +1653,11 @@ video {
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-3 {
@@ -1696,6 +1718,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-\[30px\] {
@@ -2180,6 +2207,19 @@ video {
   word-break: break-word;
 }
 
+.products_nav .active span {
+  --tw-text-opacity: 1;
+  color: rgb(6 145 184 / var(--tw-text-opacity));
+}
+
+.products_nav  .active i.absolute {
+  display: inline-block;
+}
+
+.products_nav  i.absolute {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .banner{
     height: 300px;
@@ -2390,6 +2430,7 @@ video {
 
   .banner swiper-slide a {
     margin-top: 0.75rem;
+    padding: 0.5rem;
   }
 
   .JSiOsa {
@@ -3145,6 +3186,51 @@ video {
   content: var(--tw-content);
 }
 
+.before\:content-\[\\\'\\\'\]::before {
+  --tw-content: \'\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0141\\\'\]::before {
+  --tw-content: \'򰅁\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0142\\\'\]::before {
+  --tw-content: \'򰅂\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0143\\\'\]::before {
+  --tw-content: \'򰅃\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0144\\\'\]::before {
+  --tw-content: \'򰅄\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0148\\\'\]::before {
+  --tw-content: \'򰅈\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0149\\\'\]::before {
+  --tw-content: \'򰅉\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0258\\\'\]::before {
+  --tw-content: \'򰉘\';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\\\'\B0261\\\'\]::before {
+  --tw-content: \'򰉡\';
+  content: var(--tw-content);
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -3229,6 +3315,11 @@ video {
 
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\\\'\\\'\]::after {
+  --tw-content: \'\';
   content: var(--tw-content);
 }
 

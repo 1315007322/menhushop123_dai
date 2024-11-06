@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.products_nav .active span{
+    @apply text-[#0691b8]
+}
+.products_nav  .active i.absolute{
+    @apply inline-block
+}
+.products_nav  i.absolute{
+    @apply hidden
+}
 @media screen and (max-width: 768px) {
     .banner{
         height: 300px;
@@ -159,7 +168,7 @@
         font-size: 20px;
     }
     .banner swiper-slide a {
-        @apply mt-3;
+        @apply mt-3 p-2;
     }
   .JSiOsa {
     @apply bg-none bg-[#f2f5f9] bg-cover bg-no-repeat bg-[center_center] m-0 p-0;

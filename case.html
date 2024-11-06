@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/output.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="./css/swiper.css"
     />
   </head>
   <body>
@@ -77,8 +77,48 @@
                       />
                   </div>
                   <div class="hidden sm:ml-6 sm:block">
-                      <div class="flex space-x-4">
+                      <div class="flex space-x-4 relative" >
                           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                          <div class="absolute bg-white grid grid-cols-4 p-5 box_h" id="box_h" style="width: 1000px;">
+                              <div class="text col-span-1 p-2">
+                                  General Hardware
+                                  Electronic hardware
+                                  Mechanical hardware
+                                  Daily Hardware
+                                  lockset
+                                  Hardware tools
+                                  Electric drill
+                              </div>
+                              <div class=" p-1 col-span-3">
+                                  <div class="grid grid-cols-2 gap-5 jz_web_row">
+                                      <div class="col-span-1 jz_web_row__content h-full">
+                                          <div class="tips py-2">Sale</div>
+                                          <div class="title_link">
+                                              <p>
+                                                  <span class="bg-clip-text text-black RRpyku">Discover Tools</span>
+                                              </p>
+                                              <p>
+                                                  <span> Daily Pliers</span>
+                                              </p>
+                                              <a href="" class="bg-white">Book Now</a>
+                                          </div>
+                                      </div>
+                                      <div class="col-span-1 jz_web_row__content h-full">
+                                          <div class="tips">Sale</div>
+                                          <div class="title_link">
+                                              <p>
+                                                  <span class="bg-clip-text text-black RRpyku">Discover Tools</span>
+                                              </p>
+                                              <p>
+                                                  <span> Daily Pliers</span>
+                                              </p>
+                                              <a href="" class="bg-white">Book Now</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
                           <a
                                   href="./index.html"
                                   class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
@@ -87,7 +127,8 @@
                           >
                           <a
                                   href="./products.html"
-                                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                  id="Product"
+                                  class=" rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                           >Product</a
                           >
                           <a
@@ -149,7 +190,7 @@
           <div
             class="box-border w-full px-10 items-start shrink-0 max-w-full overflow-hidden relative mr-[30px] roPMCD"
           >
-            <div class="w-full">
+            <div class="w-full overflow-hidden">
               <img
                 data-loaded="true"
                 class="w-full"
@@ -215,7 +256,7 @@
           <div
             class="box-border w-full px-10 items-start shrink-0 max-w-full overflow-hidden relative mr-[30px] roPMCD"
           >
-            <div class="w-full">
+            <div class="w-full overflow-hidden">
               <img
                 data-loaded="true"
                 class="w-full"
@@ -330,6 +371,12 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script>
+		  document.getElementById('Product').onmouseenter = () => {
+				  document.getElementById('box_h').style.display = 'grid'
+		  }
+		  document.getElementById('Product').onmouseout = () => {
+				  document.getElementById('box_h').style.display = 'none'
+		  }
 		  const navbar = document.getElementById("navbar");
 		  if (window.innerWidth < 769) {
 				  navbar.classList.add("bg-black", "bg-opacity-60");
